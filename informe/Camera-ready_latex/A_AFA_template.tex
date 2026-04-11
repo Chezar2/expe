@@ -81,7 +81,7 @@
 \renewcommand\thesection{\Roman{section}}
 \renewcommand\thesubsection{}
 %agregado
-\renewcommand\theHsubsection{\thesection.\arabic{subsection}}
+%\renewcommand\theHsubsection{\thesection.\arabic{subsection}}
 %%
 
 
@@ -216,7 +216,8 @@ Para las referencias ha de seguirse el formato de las revistas de la APS. Se deb
 
    \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.48\textwidth]{layoutpage.pdf}
+    %\includegraphics[width=0.48\textwidth]{layoutpage.pdf}
+    \includegraphics[width=0.48\textwidth]{layoutpage2.pdf} %las imagenes van en pdf 
   \caption{Formato de página recomendado}
   \label{fig:figura1}
   \end{figure}
@@ -254,11 +255,12 @@ Detalles del formato  en el preámbulo de este documento \LaTeX \\
 \lipsum[4-8]
 
 \section{REFERENCIAS}
-%\vspace{-3ex}
+%\vspace{-3ex}%hace
+
 
 \bibliographystyle{abbrv}
 \renewcommand{\bibname}{}
-%\bibliographystyle{spbasic}
+\bibliographystyle{spbasic}
  \bibliography{referencias_anales}
 
 \end{document}
