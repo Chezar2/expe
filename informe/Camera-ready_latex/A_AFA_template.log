@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  11 APR 2026 16:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  11 APR 2026 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -502,12 +502,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ]
-<layoutpage.pdf, id=60, 479.31935pt x 611.55325pt>
-File: layoutpage.pdf Graphic file (type pdf)
-<use layoutpage.pdf>
-Package pdftex.def Info: layoutpage.pdf  used on input line 219.
-(pdftex.def)             Requested size: 225.34383pt x 287.51405pt.
- [2 <./layoutpage.pdf>] (A_AFA_template.bbl) [3] (A_AFA_template.aux
+<layoutpage2.pdf, id=60, 598.235pt x 845.1575pt>
+File: layoutpage2.pdf Graphic file (type pdf)
+<use layoutpage2.pdf>
+Package pdftex.def Info: layoutpage2.pdf  used on input line 220.
+(pdftex.def)             Requested size: 225.34383pt x 318.35185pt.
+ [2 <./layoutpage2.pdf>] (A_AFA_template.bbl) [3] (A_AFA_template.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -515,21 +515,28 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-Package rerunfilecheck Info: File `A_AFA_template.out' has not changed.
-(rerunfilecheck)             Checksum: 94A0884E277FAA258FE7957601DBFAF0;1565.
+
+
+Package rerunfilecheck Warning: File `A_AFA_template.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `A_AFA_template.out':
+(rerunfilecheck)             Before: 7A3EAFBB43F8A1CC704D4950701BB6B6;1593
+(rerunfilecheck)             After:  94A0884E277FAA258FE7957601DBFAF0;1565.
  ) 
 Here is how much of TeX's memory you used:
  14009 strings out of 467866
- 231972 string characters out of 5418325
- 771907 words of memory out of 5000000
+ 231979 string characters out of 5418325
+ 771908 words of memory out of 5000000
  42709 multiletter control sequences out of 15000+600000
  635734 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,692b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on A_AFA_template.pdf (3 pages, 250078 bytes).
+Output written on A_AFA_template.pdf (3 pages, 333016 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  11 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
