@@ -63,7 +63,9 @@
 \newcommand{\enresumen}[1]{\small{#1 \par}\vspace{1.5ex}}
 \newcommand{\keywords}[1]{\small{\emph{#1} \par}\vspace{1.5ex}}
 
-
+%% otro paquete que agrego yo
+\usepackage{amsmath}
+%%
 
 %%% APARIENCIA DE TITULOS, SECCIONES Y SUBSECCIONES
 \usepackage{sectsty}
@@ -80,6 +82,8 @@
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 \renewcommand\thesection{\Roman{section}}
 \renewcommand\thesubsection{}
+
+
 %agregado
 %\renewcommand\theHsubsection{\thesection.\arabic{subsection}}
 %%
@@ -115,20 +119,22 @@
 %%% El contenido del documento comienza a partir de acá 
 
 %título del trabajo: en el primer campo en castellano, en el segundo en inglés
-\titulo{PREPARACIÓN DE MANUSCRITOS “CAMERA-READY” PARA LOS ANALES AFA}
-{PREPARATION OF CAMERA READY MANUSCRIPTS FOR ANALES AFA}
+\titulo{RESPUESTA TRANSITORIA EN UN CIRCUITO RC}
+%{CAMERA-READY TEMPLATE FOR ANALES AFA}
 
-\autor{1}{X.X. Alfa}
-\autor{2}{Y.Y. Beta}
-\corresponding{1,2}{Z.Z. Gamma} %corresponding author 
+\autor{ }{César Orlando Solis}
+%\text{ \href{mailto:cesar.solis@mi.unc.edu.ar}{cesar.solis@mi.unc.edu.ar}}
+%\autor{ }{Y.Y. Beta}
+%\corresponding{1,2}{Z.Z. Gamma} %corresponding author 
 
-%afiliaciones: se pueden combinar
-\filiacion{1}{Instituto de Matemática Aplicada San Luis (IMASL) – Universidad Nacional De San Luis – CONICET \par
-Ejército de los Andes 950 – (5700) San Luis – Argentina}
-\filiacion{2}{Centro de Investigaciones en Láseres y Aplicaciones  CEILAP (CITEDEF-CONICET)
-J. B. de La Salle 4397 \par (B1603ALO) Villa Martelli – Prov. Buenos Aires – Argentina}
 
-\fecha{Recibido: xx/xx/xx; Aceptado: xx/xx/xx} %No modificar
+%afiliaciones: se pueden combinar% Facultad de Matematica, Astronomia, Fisica y Computacion, UNC - Av. Medina Allende - (5000) Cordoba - Argentina
+\filiacion{ }{Facultad de Matematica, Astronomia, Fisica y Computacion, UNC\par
+Av. Medina Allende - (5000) Cordoba – Argentina}
+%\filiacion{2}{Centro de Investigaciones en Láseres y Aplicaciones  CEILAP (CITEDEF-CONICET)
+%J. B. de La Salle 4397 \par (B1603ALO) Villa Martelli – Prov. Buenos Aires – Argentina}
+
+\fecha{Fecha: 01/04/26 }%;Aceptado: xx/xx/xx} %No modificar
 
 
 \setcounter{Maxaffil}{0}
@@ -145,12 +151,16 @@ J. B. de La Salle 4397 \par (B1603ALO) Villa Martelli – Prov. Buenos Aires –
 \centering\begin{minipage}{\dimexpr\paperwidth-6cm}
 
 %Abstract en castellano
-\esresumen{En este trabajo se presentan las indicaciones para confeccionar las contribuciones para ANALES AFA en versión “camera-ready”. Este documento puede ser conseguido vía Internet en home pages de la Universidad Nacional de San Luis en el item correspondiente. }
-\pclaves{Palabras Clave: preparación, manuscritos, publicación.} %palabras clave
+\esresumen{En este trabajo se analiza el comportamiento de la diferencia de potencial 
+en función del tiempo entre los extremos de las componentes de un circuito RC en serie,
+ cuando se somete a una señal de alimentación cuadrada positiva, que permita que el capacitor
+  se cargue y descargue completamente en un periodo. También se determina el tiempo característico del circuito.
+}
+%\pclaves{Palabras Clave: preparación, manuscritos, publicación.} %palabras clave
 
 %Abstract en inglés
-\enresumen{In this paper the instructions for making “camera-ready” contributions to ANALES AFA are presented. This document can be found via Internet in the home pages of the Universidad Nacional de San Luis, under the appropiate choice.}
-\keywords{Keywords: making, papers, publishing.}  %key words
+%\enresumen{In this paper the instructions for making “camera-ready” contributions to ANALES AFA are presented. This document can be found via Internet in the home pages of the Universidad Nacional de San Luis, under the appropiate choice.}
+%\keywords{Keywords: making, papers, publishing.}  %key words
 
 \end{minipage}
 \vspace{4ex}
@@ -161,98 +171,114 @@ J. B. de La Salle 4397 \par (B1603ALO) Villa Martelli – Prov. Buenos Aires –
 \thispagestyle{empty}
 
 \setcounter{footnote}{1}
-
+%\begin{equation} \end{equation}
+%
 \section{INTRODUCCIÓN}
-Estas instrucciones tienen como objetivo ayudar a los autores que deseen publicar en ANALES AFA a preparar sus manuscritos para una reproducción directa foto-offset. Los textos no sufrirán ninguna reducción adicional. De esta manera saldrán publicados en la forma que los autores prefieran, le darán uniformidad a los ANALES y resultará en una más eficiente, económica y rápida impresión de los mismos. 
+Se conoce como $\textbf{Circuito RC}$ a un circuito que consiste en una combinación en 
+serie de un resistor y un capacitor. Mientras el capacitor se carga o descarga, la diferencia de potencial entre sus extremos se describe idealmente
+por ec(1) y ec(2) respectivamente.
+\begin{equation}V_C(t)=V_{max} \left(1 - e^{-t/(RC)}\right)\end{equation}
+\begin{equation}V_C(t)=V_{max} e^{-t/(RC)}\end{equation}
+Usando ec(1)y ec(2) se puede hallar la forma de carga en funcion del tiempo, y derivando se llega a corriente $I(t)$, y se puede 
+determinar la forma en que varía la diferencia de potencial entre los extremos de la resistencia para carga y descarga por ec (3) 
+y ec(4) respectivamente.
+\begin{equation}V_R(t)=V_{max} e^{-t/(RC)}\end{equation} 
+\begin{equation}V_R(t)=-V_{max} e^{-t/(RC)}\end{equation} 
+La constante $\tau$ es el tiempo característico del circuito, que cumple \begin{equation}\tau=RC\end{equation} 
+y representa el intervalo de tiempo durante el cual el voltaje disminuye hasta $1/e$ de su valor inicial.
+\section{METODOLOGÍA}
+%\subsection{Instrucciones generales para la redacción}
+Primero se hacen mediciones de la resistencia y capacitor con multímetro.
+Se conectan la fuente y el generador de funciones (GF), estableciendo en este último que genere una señal cuadrada positiva 
+con frecuencia de $950Hz$ y voltaje $1,5V$ , luego usando $\texttt{offset}$ se cambia a una amplitud pico-a-pico de $3,12V$ para la onda.
+Se arma y conecta el circuito RC al GF y luego a los canales (CH1, CH2) del OSC, como se indica en la figura(1). Los canales 
+deberán estar configurados en acoplamiento CC, y CH2 en modo INV, por la forma en que se conecta al circuito.
 
-Este documento es en sí mismo un ejemplo de cómo quedarán los trabajos en su forma final para publicación. Los artículos deben ser escritos en ESPAÑOL, con título y resumen en ESPAÑOL y ambos en INGLÉS; esto último es a los fines de su inclusión en los sistemas internacionales de citaciones. Por lo mismo, se definirán palabras clave tanto en español como en inglés.
+En el osciloscopio se ajustan las escalas y se desplazan verticalmente las funciones de tal forma que sea posible 
+ver sobre el eje de tiempo los voltajes para resistencia y capacitor, luego se guardan puntos de las funciones $V_R(t)$ y $V_C(t)$, 
+para carga y descarga de capacitor.
+Usando los cursores del osciloscopio, se hacen varias mediciones del tiempo que tardan las funciones en variar 1/e, 
+para carga será un $63\%$ del voltaje maximo ($V_{max}$) que alcanza la onda generada por GF y para descarga un $37\%$, estas serán  $\tau$ de referencia.
+Se hacen ajustes no lineales usando ecuaciones (1-4) para puntos guardados, con tiempo como variable independiente y $V_{max}$, $\tau$, D como parámetros, 
+siendo D el offset vertical de la función, que se incluye para mejorar el ajuste, con un programa de python.
+ %imagenes  
+    \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\textwidth]{circuito.png}
+  \caption{Esquema del circuito RC conectado al GF y a los canales CH1 y CH2 del OSC}
+  \label{fig:figura1}
+  \end{figure}
 
+ % \begin{figure}[ht]
+ %   \centering
+ %   \includegraphics[width=0.48\textwidth]{vr-vc-general.jpg}
+ % \caption{Vista general de voltajes en funcion del tiempo para capacitor y resistencia, en este caso mientras se descarga de capacitor.}
+ % \label{fig:figura2}
+ % \end{figure}
+ %
 
-\section{MÉTODOS}
-\subsection{Instrucciones generales para la redacción}
-Los manuscritos deben inscribirse en un rectángulo de 17 $\times$ 25,2 cm$^2$, como se muestra en la Fig. 1, en papel formato DIN A4 (21 $\times$ 29,7 cm$^2$) y respetando los márgenes que se indican.
+\section{RESULTADOS}
+Por medir la resistencia y capacitancia de los elementos del circuito, se aproxima un valor de tiempo característico, usando ec(5), 
+$\tau_a = (3.4\pm0.1)10^{-5}s$ , con $R=(1000\pm3)\Omega$ y $C=(3.4\pm0.1)10^{-9}F $.
+Usando los $\tau$ medidos con cursores se calculan valores medios, $\overline{\tau_c}=(2.37\pm0.06)10^{-5}s$ $\overline{\tau_d}=(1.43\pm0.08)10^{-5}s$ 
+para carga y descarga respectivamente.
+Finalmente, se rescatan los parámetros correspondientes a $\tau$ devueltos por el programa de ajuste, ver fig(2) y fig(3), 
+para los puntos $V_C(t)$ $V_R(t)$ guardados por el OSC, para carga y descarga. Ver tabla(1).
 
-Se solicita a los autores que generen sus manuscritos en un procesador de texto de uso difundido. No remitir copias electrónicas en soporte físico. Deben enviarse en formato PDF (para revisión), y la versión final ya corregida y aprobada se entregará tanto en PDF como en DOC, siempre por correo electrónico, a la dirección analesafaba@gmail.com y con copia a la dirección analesafatan@gmail.com. 
-El presente documento, así como las instrucciones en general y sobre cómo publicar en los ANALES, estará disponible via INTERNET en breve. Este documento ha sido escrito en WORD 6.0 e incluye las especificaciones de todos los estilos necesarios; puede por tanto ser utilizado como plantilla sobreescribiendo en el mismo. Por favor, NO INCLUYA numeración de páginas.
-
-\subsection{Tipos de letra y espaciado de líneas}
-Todo manuscrito debe tener espaciado simple, incrementándolo automáticamente para subíndices y supraíndices. Debe usarse fuente Times New Roman y generarse en dos columnas. Se ahorran todos estos ajustes al usar este template en \LaTeX.
-En la Tabla 1 se muestran los tamaños de fuentes, formatos de párrafo y separación entre secciones. Por ejemplo, el párrafo normal requiere una sangría de 1 cm y una separación de 6 pts. entre párrafos. Recuerde que 1 \emph{point} = 1 pt. $\cong$ 0.25 mm. La lista de Estilos de la Tabla 1 también está incluida en el archivo asociado al presente documento.
-
-\subsection{Material ilustrativo}
+%\subsection{Material ilustrativo}
 
 %tabla grande, ocupa el doble ancho de la página. LaTeX las ubica al principio de la hoja
 \begin{table*}[t]  
 \centering
-\caption{Estilo recomendado de tabla a doble columna}
+%\caption{Estilo recomendado de tabla a doble columna}
 \label{tabl:tab1}
-\begin{tabular}{|cccc|}
+\begin{tabular}{|c|c|}
 \hline
-Día       & Temp. min & Temp. Max & Resumen                       \\ \thickhline
-Lunes     & 284 K     & 296 K     & Soleado, despejado            \\ \hline
-Martes    & 285 K     & 297 K     & Soleado, despejado            \\ \hline
-Miércoles & 281 K      & 293 K     & Parcialmente nublado, ventoso \\ \hline
-Jueves    & 284 K     & 293  K     & Parcialmente nublado          \\ \hline
-Viernes   & 284 K     & 291 K     & Lluvioso                      \\ \hline
-Sábado    & 285 K     & 292 K     & Nublado                       \\ \hline
+$\tau$       & $e_{relativo}(\tau)$ \\ \thickhline
+$\tau_{V_Cc}$     & 0.002$\%$                   \\ \hline
+$\tau_{V_Rc}$    & 0.002$\%$                     \\ \hline
+$\tau_{V_Cd}$ & 0.005$\%$                     \\ \hline
+$\tau_{V_Rd}$    & 0.005$\%$                     \\ \hline
+$\overline{\tau_c}$   & 0.03$\%$                     \\ \hline
+$\overline{\tau_d}$    & 0.06$\%$                     \\ \hline
+$\tau_a$    & 0.03$\%$                     \\ \hline
 \end{tabular}
+\caption{Errores relativos para cada $\tau$ obtenido, el subinidice c o d indica que corresponde a mediociones hechas mientras se cargaba o descargaba el capacitor.}
 \end{table*}
 
-Las Figuras y Tablas se incluyen en el documento, en el sitio en que el autor lo considere más conveniente. Las leyendas de las Figuras deben anotarse debajo de ellas, como en la Fig. \ref{fig:figura1}, mientras que los títulos de las Tablas deben aparecer directamente arriba de las mismas. El ancho de las Figuras o Tablas puede extenderse a las dos columnas (Tabla \ref{tabl:tab1} y Tabla \ref{tabl:singlecolumn}).
+%Las Figuras y Tablas se incluyen en el documento, en el sitio en que el autor lo considere más conveniente. Las leyendas de las Figuras deben anotarse debajo de ellas, como en la Fig. \ref{fig:figura1}, mientras que los títulos de las Tablas deben aparecer directamente arriba de las mismas. El ancho de las Figuras o Tablas puede extenderse a las dos columnas (Tabla \ref{tabl:tab1} y Tabla \ref{tabl:singlecolumn}).
 
-\subsection{Formato de las ecuaciones}
-Las ecuaciones deben centrarse en la columna y con su número de orden entre paréntesis, alineado por derecha. En el caso de cita de ecuaciones, poner las mismas al nivel del renglón; por ejemplo, (ver ec. \ref{eq:four}).
+%\subsection{Formato de las ecuaciones}
 
-\begin{equation}
-  \rho''=\varepsilon(\rho')=A_{1}\rho' A_{1}^{\dag}+A_{2}\rho' A_{2}^{\dag}
- \label{eq:four}
-\end{equation}
 
 
 \subsection{Formato de las referencias}
-Para las referencias ha de seguirse el formato de las revistas de la APS. Se deben entonces hacer las llamadas por número levantado\cite{fuchs1975theory} sobre el renglón y generar un único listado por orden de citación al final del texto. Para evitar confusión con otras llamadas, usar para éstas símbolos distintos. En el listado de referencias, incluir los títulos en el caso de artículos\cite{imoto197221}, libros, monografías, tesis, etc. La abreviación de revistas puede consultarse en \url{https://images.webofknowledge.com/WOK46P9/help/WOS/A_abrvjt.html}
+Para las referencias ha de seguirse el formato de las revistas de la APS. Se deben entonces 
+hacer las llamadas por número levantado\cite{fuchs1975theory} sobre el renglón y generar un 
+único listado por orden de citación al final del texto. Para evitar confusión con otras llamadas,
+ usar para éstas símbolos distintos. En el listado de referencias, incluir los títulos en el caso
+  de artículos\cite{imoto197221}, libros, monografías, tesis, etc. La abreviación de revistas puede
+   consultarse en \url{https://images.webofknowledge.com/WOK46P9/help/WOS/A_abrvjt.html}
 
 \section{OTROS TEMAS}
 
    \begin{figure}[ht]
     \centering
-    %\includegraphics[width=0.48\textwidth]{layoutpage.pdf}
-    \includegraphics[width=0.48\textwidth]{layoutpage2.pdf} %las imagenes van en pdf 
-  \caption{Formato de página recomendado}
-  \label{fig:figura1}
+    \includegraphics[width=0.48\textwidth]{ajustes-carga.pdf} %las imagenes van en pdf 
+  \caption{Imagen superior: ajuste para puntos de $V_{cc}(t)$. Imagen inferior: ajuste para puntos de $V_{rc}(t)$}
+  \label{fig:figura3}
   \end{figure}
 
-\lipsum[1-3]
+  %%
+    \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\textwidth]{vc-vr-descarga.pdf} %las imagenes van en pdf 
+  \caption{Imagen superior: ajuste para puntos de $V_{cd}(t)$. Imagen inferior: ajuste para puntos de $V_{rd}(t)$}
+  \label{fig:figura4}
+  \end{figure}
 
-%tabla a single column; los anchos de las columnas están definidos en la línea \begin{tabular}. Si hacen falta más columnas
-%que las L, C y R hay que definirlas en el preámbulo (sección FORMATO DE TABLAS), replicando las que ya están con otro nombre
-\begin{table}
-\small
-\centering
-\caption{Estilo para tabla a una columna}
-\label{tabl:singlecolumn}
-\begin{tabular}{| L{2.2cm} | C{2.2cm} | R{2.2cm} |}
-\hline
-Columna 1 &
-Columna 2 &
-Columna 3  \\  \thickhline
-Celda con texto que se ajusta al ancho, alineado a la izquierda y permite \newline
-   saltos de línea manuales &
-Celda con texto que se ajusta al ancho, centrado y que premite \newline
-    saltos de línea manuales &
-Celda con texto que se ajusta al ancho, alineado a la derecha y permite \newline
-   saltos de línea manuales \\  \hline
-Detalles del formato  en el preámbulo de este documento \LaTeX  &
-Detalles del formato  en el preámbulo de este documento \LaTeX &
-Detalles del formato  en el preámbulo de este documento \LaTeX \\ \hline
-Detalles del formato  en el preámbulo de este documento \LaTeX  &
-Detalles del formato  en el preámbulo de este documento \LaTeX &
-Detalles del formato  en el preámbulo de este documento \LaTeX \\ 
- \hline
-\end{tabular}
-\end{table}
+%%
 
-\lipsum[4-8]
 
 \section{REFERENCIAS}
 %\vspace{-3ex}%hace

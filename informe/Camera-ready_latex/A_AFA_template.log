@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  11 APR 2026 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  17 APR 2026 14:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/solis/Documents/FaMAF/progra/expe/informe/Camera-ready_latex/A_AFA_template.tex
-(c:/Users/solis/Documents/FaMAF/progra/expe/informe/Camera-ready_latex/A_AFA_template.tex
+**c:/Users/solis/Documents/FaMAF/Expe3/informes/expe/informe/Camera-ready_latex/A_AFA_template.tex
+(c:/Users/solis/Documents/FaMAF/Expe3/informes/expe/informe/Camera-ready_latex/A_AFA_template.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -293,6 +293,70 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@Maxaffil=\count315
 \c@authors=\count316
 \c@affil=\count317
+) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip77
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen175
+)) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen176
+) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count318
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count319
+\leftroot@=\count320
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count321
+\DOTSCASE@=\count322
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen177
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count323
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count324
+\dotsspace@=\muskip18
+\c@parentequation=\count325
+\dspbrk@lvl=\count326
+\tag@help=\toks27
+\row@=\count327
+\column@=\count328
+\maxfields@=\count329
+\andhelp@=\toks28
+\eqnshift@=\dimen178
+\alignsep@=\dimen179
+\tagshift@=\dimen180
+\tagwidth@=\dimen181
+\totwidth@=\dimen182
+\lineht@=\dimen183
+\@envbody=\toks29
+\multlinegap=\skip78
+\multlinetaggap=\skip79
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
 ) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 
@@ -306,15 +370,15 @@ LaTeX Warning: Command \underline  has changed.
 
 ) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box54
-\beforetitleunit=\skip77
-\aftertitleunit=\skip78
-\ttl@plus=\dimen175
-\ttl@minus=\dimen176
-\ttl@toksa=\toks26
-\titlewidth=\dimen177
-\titlewidthlast=\dimen178
-\titlewidthfirst=\dimen179
+\ttl@box=\box56
+\beforetitleunit=\skip80
+\aftertitleunit=\skip81
+\ttl@plus=\dimen184
+\ttl@minus=\dimen185
+\ttl@toksa=\toks31
+\titlewidth=\dimen186
+\titlewidthlast=\dimen187
+\titlewidthfirst=\dimen188
 ) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
@@ -325,71 +389,71 @@ Package tocbibind Note: Using section or other style headings.
 ) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
-\cftparskip=\skip79
-\cftbeforetoctitleskip=\skip80
-\cftaftertoctitleskip=\skip81
-\cftbeforepartskip=\skip82
-\cftpartnumwidth=\skip83
-\cftpartindent=\skip84
-\cftbeforesecskip=\skip85
-\cftsecindent=\skip86
-\cftsecnumwidth=\skip87
-\cftbeforesubsecskip=\skip88
-\cftsubsecindent=\skip89
-\cftsubsecnumwidth=\skip90
-\cftbeforesubsubsecskip=\skip91
-\cftsubsubsecindent=\skip92
-\cftsubsubsecnumwidth=\skip93
-\cftbeforeparaskip=\skip94
-\cftparaindent=\skip95
-\cftparanumwidth=\skip96
-\cftbeforesubparaskip=\skip97
-\cftsubparaindent=\skip98
-\cftsubparanumwidth=\skip99
-\cftbeforeloftitleskip=\skip100
-\cftafterloftitleskip=\skip101
-\cftbeforefigskip=\skip102
-\cftfigindent=\skip103
-\cftfignumwidth=\skip104
-\cftbeforelottitleskip=\skip105
-\cftafterlottitleskip=\skip106
-\cftbeforetabskip=\skip107
-\cfttabindent=\skip108
-\cfttabnumwidth=\skip109
-\cftbeforesubfigskip=\skip110
-\cftsubfigindent=\skip111
-\cftsubfignumwidth=\skip112
-\cftbeforesubtabskip=\skip113
-\cftsubtabindent=\skip114
-\cftsubtabnumwidth=\skip115
+\cftparskip=\skip82
+\cftbeforetoctitleskip=\skip83
+\cftaftertoctitleskip=\skip84
+\cftbeforepartskip=\skip85
+\cftpartnumwidth=\skip86
+\cftpartindent=\skip87
+\cftbeforesecskip=\skip88
+\cftsecindent=\skip89
+\cftsecnumwidth=\skip90
+\cftbeforesubsecskip=\skip91
+\cftsubsecindent=\skip92
+\cftsubsecnumwidth=\skip93
+\cftbeforesubsubsecskip=\skip94
+\cftsubsubsecindent=\skip95
+\cftsubsubsecnumwidth=\skip96
+\cftbeforeparaskip=\skip97
+\cftparaindent=\skip98
+\cftparanumwidth=\skip99
+\cftbeforesubparaskip=\skip100
+\cftsubparaindent=\skip101
+\cftsubparanumwidth=\skip102
+\cftbeforeloftitleskip=\skip103
+\cftafterloftitleskip=\skip104
+\cftbeforefigskip=\skip105
+\cftfigindent=\skip106
+\cftfignumwidth=\skip107
+\cftbeforelottitleskip=\skip108
+\cftafterlottitleskip=\skip109
+\cftbeforetabskip=\skip110
+\cfttabindent=\skip111
+\cfttabnumwidth=\skip112
+\cftbeforesubfigskip=\skip113
+\cftsubfigindent=\skip114
+\cftsubfignumwidth=\skip115
+\cftbeforesubtabskip=\skip116
+\cftsubtabindent=\skip117
+\cftsubtabnumwidth=\skip118
 ) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen180
-\lightrulewidth=\dimen181
-\cmidrulewidth=\dimen182
-\belowrulesep=\dimen183
-\belowbottomsep=\dimen184
-\aboverulesep=\dimen185
-\abovetopsep=\dimen186
-\cmidrulesep=\dimen187
-\cmidrulekern=\dimen188
-\defaultaddspace=\dimen189
-\@cmidla=\count318
-\@cmidlb=\count319
-\@aboverulesep=\dimen190
-\@belowrulesep=\dimen191
-\@thisruleclass=\count320
-\@lastruleclass=\count321
-\@thisrulewidth=\dimen192
+\heavyrulewidth=\dimen189
+\lightrulewidth=\dimen190
+\cmidrulewidth=\dimen191
+\belowrulesep=\dimen192
+\belowbottomsep=\dimen193
+\aboverulesep=\dimen194
+\abovetopsep=\dimen195
+\cmidrulesep=\dimen196
+\cmidrulekern=\dimen197
+\defaultaddspace=\dimen198
+\@cmidla=\count330
+\@cmidlb=\count331
+\@aboverulesep=\dimen199
+\@belowrulesep=\dimen256
+\@thisruleclass=\count332
+\@lastruleclass=\count333
+\@thisrulewidth=\dimen257
 ) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen193
-\ar@mcellbox=\box55
-\extrarowheight=\dimen194
-\NC@list=\toks27
-\extratabsurround=\skip116
-\backup@length=\skip117
-\ar@cellbox=\box56
+\col@sep=\dimen258
+\ar@mcellbox=\box57
+\extrarowheight=\dimen259
+\NC@list=\toks32
+\extratabsurround=\skip119
+\backup@length=\skip120
+\ar@cellbox=\box58
 ) (A_AFA_template.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
@@ -398,26 +462,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `A_AFA_template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Info: Redefining \. on input line 138.
-LaTeX Info: Redefining \% on input line 138.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Info: Redefining \. on input line 144.
+LaTeX Info: Redefining \% on input line 144.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -455,17 +519,17 @@ LaTeX Info: Redefining \% on input line 138.
 
 (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen195
-\scratchbox=\box57
-\nofMPsegments=\count323
-\nofMParguments=\count324
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen196
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count334
+\scratchdimen=\dimen260
+\scratchbox=\box59
+\nofMPsegments=\count335
+\nofMParguments=\count336
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count337
+\MPscratchDim=\dimen261
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
+\everyMPtoPDFconversion=\toks34
 ) (C:\Users\solis\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -476,38 +540,31 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 138.
+Package hyperref Info: Link coloring OFF on input line 144.
  (A_AFA_template.out) (A_AFA_template.out)
 \@outlinefile=\write3
 \openout3 = `A_AFA_template.out'.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 159.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 159.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 159.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 159.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 159.
+<circuito.png, id=29, 490.83376pt x 465.53925pt>
+File: circuito.png Graphic file (type png)
+<use circuito.png>
+Package pdftex.def Info: circuito.png  used on input line 207.
+(pdftex.def)             Requested size: 225.34383pt x 213.73154pt.
+ [1{C:/Users/solis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 172.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 173.
-[1{C:/Users/solis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-
-
-]
-<layoutpage2.pdf, id=60, 598.235pt x 845.1575pt>
-File: layoutpage2.pdf Graphic file (type pdf)
-<use layoutpage2.pdf>
-Package pdftex.def Info: layoutpage2.pdf  used on input line 220.
+ <./circuito.png>]
+<ajustes-carga.pdf, id=56, 598.235pt x 845.1575pt>
+File: ajustes-carga.pdf Graphic file (type pdf)
+<use ajustes-carga.pdf>
+Package pdftex.def Info: ajustes-carga.pdf  used on input line 267.
 (pdftex.def)             Requested size: 225.34383pt x 318.35185pt.
- [2 <./layoutpage2.pdf>] (A_AFA_template.bbl) [3] (A_AFA_template.aux
+<vc-vr-descarga.pdf, id=57, 598.235pt x 845.1575pt>
+File: vc-vr-descarga.pdf Graphic file (type pdf)
+<use vc-vr-descarga.pdf>
+Package pdftex.def Info: vc-vr-descarga.pdf  used on input line 275.
+(pdftex.def)             Requested size: 225.34383pt x 318.35185pt.
+ (A_AFA_template.bbl) [2 <./ajustes-carga.pdf> <./vc-vr-descarga.pdf>] [3] (A_AFA_template.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -515,28 +572,21 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-Package rerunfilecheck Warning: File `A_AFA_template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `A_AFA_template.out':
-(rerunfilecheck)             Before: 7A3EAFBB43F8A1CC704D4950701BB6B6;1593
-(rerunfilecheck)             After:  94A0884E277FAA258FE7957601DBFAF0;1565.
+Package rerunfilecheck Info: File `A_AFA_template.out' has not changed.
+(rerunfilecheck)             Checksum: 7DA0B3584C11E8DCE8D38F9FCCE82BF2;829.
  ) 
 Here is how much of TeX's memory you used:
- 14009 strings out of 467866
- 231979 string characters out of 5418325
- 771908 words of memory out of 5000000
- 42709 multiletter control sequences out of 15000+600000
- 635734 words of font info for 66 fonts, out of 8000000 for 9000
+ 14736 strings out of 467866
+ 241807 string characters out of 5418325
+ 779787 words of memory out of 5000000
+ 43409 multiletter control sequences out of 15000+600000
+ 638005 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,692b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on A_AFA_template.pdf (3 pages, 333016 bytes).
+ 75i,10n,79p,519b,481s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on A_AFA_template.pdf (3 pages, 331999 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 72 words of extra memory for PDF output out of 10000 (max. 10000000)
 
