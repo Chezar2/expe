@@ -120,9 +120,9 @@
 
 %título del trabajo: en el primer campo en castellano, en el segundo en inglés
 \titulo{RESPUESTA TRANSITORIA EN UN CIRCUITO RC}
-%{CAMERA-READY TEMPLATE FOR ANALES AFA}
+ 
+\autor{ }{César Orlando Solis \\ \small \texttt{cesar.solis@mi.unc.edu.ar}}
 
-\autor{ }{César Orlando Solis}
 %\text{ \href{mailto:cesar.solis@mi.unc.edu.ar}{cesar.solis@mi.unc.edu.ar}}
 %\autor{ }{Y.Y. Beta}
 %\corresponding{1,2}{Z.Z. Gamma} %corresponding author 
@@ -151,10 +151,12 @@ Av. Medina Allende - (5000) Cordoba – Argentina}
 \centering\begin{minipage}{\dimexpr\paperwidth-6cm}
 
 %Abstract en castellano
-\esresumen{En este trabajo se analiza el comportamiento de la diferencia de potencial 
-en función del tiempo entre los extremos de las componentes de un circuito RC en serie,
- cuando se somete a una señal de alimentación cuadrada positiva, que permita que el capacitor
-  se cargue y descargue completamente en un periodo. También se determina el tiempo característico del circuito.
+\esresumen{En este trabajo se analiza el comportamiento de la diferencia de potencial en función del 
+tiempo en los extremos de las componentes de un circuito RC en serie, sometido a una señal de alimentación 
+cuadrada positiva. El tiempo característico del circuito ($\tau$) se determinó mediante tres métodos distintos:
+cálculo analítico a partir de las componentes del circuito, medición directa con cursores en el osciloscopio y ajustes no lineales sobre puntos medidos. 
+Los $\tau$ obtenidos por el método de ajuste resultaron ser los más precisos, brindando un 
+tiempo característico medio $\tau = (1,88 \pm 0,01) \times 10^{-5} \text{ s}$. 
 }
 %\pclaves{Palabras Clave: preparación, manuscritos, publicación.} %palabras clave
 
@@ -174,37 +176,33 @@ en función del tiempo entre los extremos de las componentes de un circuito RC e
 %\begin{equation} \end{equation}
 %
 \section{INTRODUCCIÓN}
-Se conoce como $\textbf{Circuito RC}$ a un circuito que consiste en una combinación en 
-serie de un resistor y un capacitor. Mientras el capacitor se carga o descarga, la diferencia de potencial entre sus extremos se describe idealmente
-por ec(1) y ec(2) respectivamente.
-\begin{equation}V_C(t)=V_{max} \left(1 - e^{-t/(RC)}\right)\end{equation}
-\begin{equation}V_C(t)=V_{max} e^{-t/(RC)}\end{equation}
-Usando ec(1)y ec(2) se puede hallar la forma de carga en funcion del tiempo, y derivando se llega a corriente $I(t)$, y se puede 
-determinar la forma en que varía la diferencia de potencial entre los extremos de la resistencia para carga y descarga por ec (3) 
-y ec(4) respectivamente.
-\begin{equation}V_R(t)=V_{max} e^{-t/(RC)}\end{equation} 
-\begin{equation}V_R(t)=-V_{max} e^{-t/(RC)}\end{equation} 
+Se conoce como circuito RC a un circuito que consiste en una combinación en 
+serie de un resistor y un capacitor. Mientras el capacitor se carga o descarga, por las leyes de Kirchhoff y tomando la espira adecuada en cada caso
+se llegan a dos expresiones que describen la carga dentro del capacitor, ec(1)  y ec(2), para carga y descarga respectivamente, Q es la carga máxima del capacitor.
+\begin{equation}q(t)=Q \left(1 - e^{-t/(RC)}\right)\end{equation}
+\begin{equation}q(t)=Q e^{-t/(RC)}\end{equation}
+
+Usando ec(1)y ec(2) obtengo expresiones para el voltaje entre los extremos del capacitor al dividir ambos miembros por la capacitancia de este, 
+quedando ec(3) y ec(4) ,para carga y descarga respectivamente.
+\begin{equation}V_{Cc}(t)=V_{max} \left(1 - e^{-t/(RC)}\right)\end{equation}
+\begin{equation}V_{Cd}(t)=V_{max} e^{-t/(RC)}\end{equation}
+Luego, derivando ec(1) y ec(2) con respecto al tiempo, se obtienen las expresiones para la corriente que pasa por el circuito, y multiplicando ambos miembros por la resistencia, se obtienen ec(5) para carga y ec(6) que describen
+diferencia de potencial entre extremos de la resistencia, para carga y descarga respectivamente.
+\begin{equation}V_{Rc}(t)=V_{max} e^{-t/(RC)}\end{equation} 
+\begin{equation}V_{Rd}(t)=-V_{max} e^{-t/(RC)}\end{equation} 
 La constante $\tau$ es el tiempo característico del circuito, que cumple \begin{equation}\tau=RC\end{equation} 
 y representa el intervalo de tiempo durante el cual el voltaje disminuye hasta $1/e$ de su valor inicial.
 \section{METODOLOGÍA}
 %\subsection{Instrucciones generales para la redacción}
-Primero se hacen mediciones de la resistencia y capacitor con multímetro.
-Se conectan la fuente y el generador de funciones (GF), estableciendo en este último que genere una señal cuadrada positiva 
-con frecuencia de $f=950$Hz y voltaje maximo $V_{max}=1.50V$ , luego usando $\texttt{offset}$ se cambia a una amplitud pico-a-pico cercana a 3V, quedando
+Primero se hacen mediciones de la resistencia y capacitor con multímetro, $R=(1000\pm3)\Omega$ y $C=(3.4\pm0.1)10^{-9}F $.
+
+Se conectan la fuente y el generador de funciones (GF), estableciendo en este último una señal cuadrada positiva 
+con una frecuencia de $f=950$Hz y voltaje maximo $V_{max}=1.50V$ , luego usando un $\texttt{offset}$ se cambia a una amplitud pico-a-pico cercana a 3V, quedando
 $V_{max}$ de $3.12V$ para la onda.
 
 Se arma y conecta el circuito RC al GF y luego a los canales (CH1, CH2) del OSC, como se indica en la figura(1). Los canales 
-deberán estar configurados en acoplamiento CC, y CH2 en modo INV, por la forma en que se conecta al circuito.
-
-En el osciloscopio se ajustan las escalas y se desplazan verticalmente las funciones de tal forma que sea posible 
-ver sobre el eje de tiempo los voltajes para resistencia y capacitor, luego se guardan puntos de las funciones $V_R(t)$ y $V_C(t)$, 
-para carga y descarga de capacitor.
-Usando los cursores del osciloscopio, se hacen varias mediciones del tiempo que tardan las funciones en variar 1/e, 
-para carga será un $63\%$ del voltaje maximo ($V_{max}$) que alcanza la onda generada por GF y para descarga un $37\%$, estas serán  $\tau$ de referencia.
-
-Se hacen los ajustes no lineales usando ecuaciones (1-4) para los puntos guardados, con tiempo como variable y $V_{max}$, $\tau$, D como parámetros, 
-siendo D el termino independiente de la función, que se agrega para mejorar el ajuste hecho con un programa de python. Ver figura(2) y figura(3).
- %imagenes  
+deberán estar configurados en acoplamiento CC, y CH2 en modo INV, por la forma en que se conecta al circuito. Ver esquema del circuito en la figura(1).
+%
     \begin{figure}[ht]
     \centering
     \includegraphics[width=0.48\textwidth]{circuito.png}
@@ -212,94 +210,137 @@ siendo D el termino independiente de la función, que se agrega para mejorar el 
   \label{fig:figura1}
   \end{figure}
 
- % \begin{figure}[ht]
- %   \centering
- %   \includegraphics[width=0.48\textwidth]{vr-vc-general.jpg}
- % \caption{Vista general de voltajes en funcion del tiempo para capacitor y resistencia, en este caso mientras se descarga de capacitor.}
- % \label{fig:figura2}
- % \end{figure}
- %
+%
+$\pagebreak$
 
+En el osciloscopio se ajustan las escalas y se desplazan verticalmente las funciones de tal forma que sea posible 
+ver sobre el eje de tiempo los voltajes para resistencia y capacitor, luego se guardan puntos de las funciones $V_R(t)$ y $V_C(t)$, 
+para carga y descarga de capacitor. Ver figura(2) para una vista general de las funciones mostradas en osciloscopio.
+
+
+  %%
+    \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\textwidth]{vr-vc-general.jpg} %las imagenes van en pdf 
+    \caption{Vista general de voltajes en funcion del tiempo para capacitor y resistencia, en este caso mientras se descarga de capacitor.}
+  \label{fig:figura2}
+  \end{figure}
+
+%%
+Usando los cursores del osciloscopio, se hacen varias mediciones del tiempo que tardan las funciones en variar 1/e, 
+para carga será un $63\%$ del voltaje maximo ($V_{max}$) que alcanza la onda generada por GF y para descarga un $37\%$, estas serán  $\tau$ de referencia.
+
+%A continuación se hacen los ajustes no lineales usando ecuaciones (1-4) para los puntos guardados, con tiempo como variable y $V_{max}$, $\tau$, D como parámetros, 
+%siendo D el termino independiente de la función, que se agrega para mejorar el ajuste hecho con un programa de python. Ver figura(2) y figura(3).
+A continuacion, para realizar los ajustes no lineales, utilizo las siguientes funciones que imitan la forma de las ecuaciones (3), (4), (5) y (6) respectivamente.
+\begin{equation}V_{Cc}(x)=P_0 \left(1 - e^{-(x-x_0)/P_1}\right)+P_2\end{equation}
+\begin{equation}V_{Cd}(x)=P_0 \left( e^{-(x-x_0)/P_1}\right)+P_2\end{equation}
+
+\begin{equation}V_{Rc}(x)=P_0 \left( e^{-(x-x_0)/P_1}\right)+P_2\end{equation}
+\begin{equation}V_{Rd}(x)=P_0 \left(- e^{-(x-x_0)/P_1}\right)+P_2\end{equation}
+Donde $P_0$ es el voltaje maximo, $P_1$ es el tiempo caracteristico $\tau$, $P_2$ es el termino independiente que se agrega para mejorar el ajuste, 
+y $x_0$ es un corrimiento en el eje de tiempo que se agrega, ya que las funciones no comienzan exactamente en $x=0s$.
+
+
+%$\pagebreak$
 \section{RESULTADOS}
-Por medir la resistencia y capacitancia de los elementos del circuito, se aproxima un valor de tiempo característico, usando ec(5), 
-$\tau_a = (0.34\pm0.01)10^{-5}s$ , con $R=(1000\pm3)\Omega$ y $C=(3.4\pm0.1)10^{-9}F $.
+Por medir la resistencia y capacitancia de los elementos del circuito, se aproxima un valor de tiempo característico, usando ec(7), 
+$\tau_a = (0.34\pm0.01)10^{-5}s$.
 
 Usando los $\tau$ medidos con cursores se calculan valores medios, $\overline{\tau_c}=(2.37\pm0.06)10^{-5}s$ $\overline{\tau_d}=(1.43\pm0.08)10^{-5}s$ 
 para carga y descarga respectivamente.
+Se realizan los ajustes no lineales para cada función (ver figuras (3) y (4)), y se rescatan los parámetros correspondientes a $\tau$ 
+devueltos por el programa de ajuste, ver tabla(1).
 
-Finalmente, se rescatan los parámetros correspondientes a $\tau$ devueltos por el programa de ajuste, 
-para los puntos $V_C(t)$ $V_R(t)$ guardados por el OSC, para carga y descarga. En tabla(1) se encuentran todos los tiempos caracteristicos obtenidos.
+\section{CONCLUSION}
+En este trabajo se determinó el tiempo característico $\tau$ mediante tres metodos:
+ el cálculo analítico ($\tau_{a}$), la medición directa con cursores ($\overline{\tau_{c}}, \overline{\tau_{d}}$) 
+ y el ajuste no lineal de las curvas de voltaje.
 
-%\subsection{Material ilustrativo}
+ Al comparar los resultados de Tabla(2) se observa que los tiempos caracteristicos obtenidos por los ajustes tienen menor error relativo que 
+ los calculados por los otros métodos, hallandose entre el $0.2\% $ y el $0.5\% $. Estos resultados son los más confiables del trabajo,
+ ya que se ha usado una gran cantidad de puntos para el ajuste.
+ Por otro lado, con los cursores se obtiene un error relativo de entre el $3\%$ y el $6\%$, debido a la gran dificultad de posicionar manualmente 
+ los cursores donde correspondia, se le atribuye error humano.
+   
+ El valor de referencia $\tau_{a}$ calculado a partir de la resistencia y capacitancia medidas con multímetro muestra la mayor desviación respecto 
+ a los valores de ajuste, que podría deberse a la inestabilidad observada en las lecturas del multímetro, el cual no mostraba un valor fijo 
+ durante la medición del capacitor, afectando la precisión de $\tau_{a}$, sin mencionar que este método es el menos confiable, por basarse en mediciones que 
+ tienen un error significativo, sin tener en cuenta la resistencia del cableado, que afectan el valor real de $\tau$.
+ Finalmente, se concluye que el mejor método para determinar $\tau$ es el ajuste no lineal, y tomo como tiempo caracteristico final el valor medio entre estos, quedando:
+ $$\tau=(1.88\pm0.01)10^{-5} s$$
 
-%tabla grande, ocupa el doble ancho de la página. LaTeX las ubica al principio de la hoja
-\begin{table*}[t]  
-\centering
-%\caption{Estilo recomendado de tabla a doble columna}
-\label{tabl:tab1}
-\begin{tabular}{|c|c|c|}
-\hline
-$\tau$      & Valor hallado& $e_{relativo}(\tau)$ \\ \thickhline
-$\tau_{V_Cc}$ &  $(1.778\pm0.003 )10^{-5}s$  & 0.002$\%$\\ \hline
-$\tau_{V_Rc}$  &  $(1.814\pm0.004 )10^{-5}s$  & 0.002$\%$\\ \hline
-$\tau_{V_Cd}$ & $(1.88\pm0.01 )10^{-5}s$ &0.005$\%$\\ \hline
-$\tau_{V_Rd}$   & $(2.06\pm0.01 )10^{-5}s$ & 0.005$\%$\\ \hline
-$\overline{\tau_c}$&  $(2.37\pm0.06)10^{-5}s$  & 0.03$\%$\\ \hline
-$\overline{\tau_d}$ &  $(1.43\pm0.08)10^{-5}s$  & 0.06$\%$\\ \hline
-$\tau_a$ &   $(0.34\pm0.01)10^{-5}s$ & 0.03$\%$\\ \hline
-\end{tabular}
-\caption{Todos $\tau$ hallados con sus errores relativos, el subinidice c o d indica que corresponde a mediociones hechas mientras se cargaba o descargaba el capacitor.}
-\end{table*}
 
-%Las Figuras y Tablas se incluyen en el documento, en el sitio en que el autor lo considere más conveniente. Las leyendas de las Figuras deben anotarse debajo de ellas, como en la Fig. \ref{fig:figura1}, mientras que los títulos de las Tablas deben aparecer directamente arriba de las mismas. El ancho de las Figuras o Tablas puede extenderse a las dos columnas (Tabla \ref{tabl:tab1} y Tabla \ref{tabl:singlecolumn}).
-
-%\subsection{Formato de las ecuaciones}
+%
    \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.48\textwidth]{ajustes-carga.pdf} %las imagenes van en pdf 
-  \caption{Imagen superior: ajuste para puntos de $V_{Cc}(t)$. Imagen inferior: ajuste para puntos de $V_{Rc}(t)$. La c indica carga de capacitor.}
+    \includegraphics[width=0.48\textwidth]{carga.pdf} 
+  \caption{Imagen superior: ajuste para puntos de $V_{Cc}(t)$. Imagen inferior: ajuste para puntos de $V_{Rc}(t)$. Cada punto con sus respectivas barras de error.}
   \label{fig:figura3}
   \end{figure}
 
   %%
     \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.48\textwidth]{vc-vr-descarga.pdf} %las imagenes van en pdf 
-    \caption{Imagen superior: ajuste para puntos de $V_{Cd}(t)$.Imagen inferior: ajuste para puntos de $V_{Rd}(t)$.La d indica descarga de capacitor.}
+    \includegraphics[width=0.48\textwidth]{descarga.pdf}
+    \caption{Imagen superior: ajuste para puntos de $V_{Cd}(t)$.Imagen inferior: ajuste para puntos de $V_{Rd}(t)$. Cada punto con sus respectivas barras de error.}
   \label{fig:figura4}
   \end{figure}
 
 %%
-\section{DISCUSIÓN}
-En este trabajo se determinó el tiempo característico $\tau$ mediante tres metodos:
- el cálculo analítico ($\tau_{a}$), la medición directa con cursores ($\overline{\tau_{c}}, \overline{\tau_{d}}$) 
- y el ajuste no lineal de las curvas de voltaje mediante Python.
 
- Al comparar los resultados de Tabla(1) se observa que los tiempos caracteristicos obtenidos por los ajustes tienen menor error relativo que 
- los calculados por los otros métodos, hallandose entre el $0.002\% $ y el $0.005\% $. Estos resultados son los más confiables del trabajo,
- ya que se ha usado una gran cantidad de puntos para el ajuste.
- Por otro lado, con los cursores se obtiene un error relativo de entre el $0.03\%$ y el $0.06\%$, debido a la gran dificultad de posicionar manualmente 
- los cursores donde correspondia, se le atribuye mucho error humano.
-   
- El valor de referencia $\tau_{a}$ calculado a partir de la resistencia y capacitancia medidas con multímetro muestra la mayor desviación respecto 
- a los valores de ajuste, que podría deberse a la inestabilidad observada en las lecturas del multímetro, el cual entregaba valores muy variantes 
- durante la medición del capacitor, afectando la precisión de $\tau_{a}$, sin mencionar que este método es el menos confiable, por basarse en mediciones que 
- tienen un error significativo, sin tener en cuenta la resistencia del cableado, que afectan el valor real de $\tau$.
- Finalmente, se concluye que el mejor método para determinar $\tau$ es el ajuste no lineal, y tomo como tiempo caracteristico final el valor medio entre estos, quedando:
- $$\tau=(1.88\pm0.01)10^{-5} s$$
+%tabla petit
+\begin{table*}[t]  
+\centering
+%\caption{Estilo recomendado de tabla a doble columna}
+\label{tabl:tab1}
+\begin{tabular}{|c|c|c|c|c|} 
+\hline
+Parametros     & $V_{Cc}$ & $V_{Cd}$ & $V_{Rc}$ & $V_{Rd}$  \\ \thickhline
+$P_0$ &$(2.983\pm 0.003)V$ & $(2.793\pm0.009)V$ & $(2.284\pm0.003)V$&$(-2.47\pm0.01)V$ \\ \hline
+$P_1$ &$(1.778\pm0.003)10^{-5}s$ &$(1.88\pm0.01)10^{-5}s$ &$(1.814\pm0.004)10^{-5}s$ &$(2.06\pm0.01)10^{-5}s$ \\ \hline
+$P_2$ &$(1.384\pm0.003)V$ &$(1.274\pm0.002)V$ &$(3.36\pm0.05)10^{-2}V$ &$(1.6\pm0.2)10^{-2}V$ \\ \hline
+\end{tabular}
+\caption{Parámetros obtenidos por el programa de ajuste, para cada función, de acuerdo a las ecuaciones (8-11).}
+\end{table*}
+%fin tabla petit
+%tabla grande, ocupa el doble ancho de la página. LaTeX las ubica al principio de la hoja
+\begin{table*}[t]  
+\centering
+%\caption{Estilo recomendado de tabla a doble columna}
+\label{tabl:tab2}
+\begin{tabular}{|c|c|c|}
+\hline
+$\tau$      & Valor hallado& $e_{relativo}(\tau)$ \\ \thickhline
+$\tau_{V_Cc}$ &  $(1.778\pm0.003 )10^{-5}s$  & 0.2$\%$\\ \hline
+$\tau_{V_Rc}$  &  $(1.814\pm0.004 )10^{-5}s$  & 0.2$\%$\\ \hline
+$\tau_{V_Cd}$ & $(1.88\pm0.01 )10^{-5}s$ &0.5$\%$\\ \hline
+$\tau_{V_Rd}$   & $(2.06\pm0.01 )10^{-5}s$ & 0.5$\%$\\ \hline
+$\overline{\tau_c}$&  $(2.37\pm0.06)10^{-5}s$  & 3$\%$\\ \hline
+$\overline{\tau_d}$ &  $(1.43\pm0.08)10^{-5}s$  & 6$\%$\\ \hline
+$\tau_a$ &   $(0.34\pm0.01)10^{-5}s$ & 3$\%$\\ \hline
+\end{tabular}
+\caption{Todos $\tau$ hallados con sus errores relativos, el subinidice c o d indica que corresponde a mediciones hechas mientras se cargaba o descargaba el capacitor.}
+\end{table*}
+
+
+
+
 \section{REFERENCIAS}
 %\vspace{-3ex}%hace
-1- Guia de laboratorio: “Trabajo de 
-Laboratorio Nº 2: Respuesta transitoria en un circuito RC” . 
+1- Guia de laboratorio:“Trabajo de 
+Laboratorio Nº2: Respuesta transitoria en un circuito RC”.
 Facultad de Matemática, Astronomía, 
 Física y Computación 2026. Aula virtual 
 Física Experimental III 2026.
 
-2- Serway, R. A., Jewett, J. W. (2008). Física para ciencias e ingeniería (Vol. 2). Cengage Learning.
 
-%\bibliographystyle{abbrv}
-%\renewcommand{\bibname}{}
-%\bibliographystyle{spbasic}
-%\bibliography{referencias_anales}
+2- Manual Multimetro UNI-T UT39E+
+
+
+3- Manual Multimetro-LCR UNI-T UT612
+
+
+4- Serway, R. A., Jewett, J. W. (2008). Física para ciencias e ingeniería (Vol. 2). Cengage Learning.
 
 \end{document}

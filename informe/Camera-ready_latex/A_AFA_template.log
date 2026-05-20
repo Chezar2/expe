@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  17 APR 2026 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  17 MAY 2026 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -455,10 +455,10 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \backup@length=\skip120
 \ar@cellbox=\box58
 ) (A_AFA_template.aux
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 12.
+(babel)             Reported on input line 11.
 )
 \openout1 = `A_AFA_template.aux'.
 
@@ -548,28 +548,28 @@ Package hyperref Info: Link coloring OFF on input line 144.
 <circuito.png, id=22, 490.83376pt x 465.53925pt>
 File: circuito.png Graphic file (type png)
 <use circuito.png>
-Package pdftex.def Info: circuito.png  used on input line 210.
+Package pdftex.def Info: circuito.png  used on input line 208.
 (pdftex.def)             Requested size: 225.34383pt x 213.73154pt.
  [1{C:/Users/solis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
  <./circuito.png>]
-<ajustes-carga.pdf, id=46, 598.235pt x 845.1575pt>
-File: ajustes-carga.pdf Graphic file (type pdf)
-<use ajustes-carga.pdf>
-Package pdftex.def Info: ajustes-carga.pdf  used on input line 259.
+<vr-vc-general.jpg, id=53, 240.9pt x 225.84375pt>
+File: vr-vc-general.jpg Graphic file (type jpg)
+<use vr-vc-general.jpg>
+Package pdftex.def Info: vr-vc-general.jpg  used on input line 224.
+(pdftex.def)             Requested size: 225.34383pt x 211.2662pt.
+<carga.pdf, id=54, 598.235pt x 845.1575pt>
+File: carga.pdf Graphic file (type pdf)
+<use carga.pdf>
+Package pdftex.def Info: carga.pdf  used on input line 277.
 (pdftex.def)             Requested size: 225.34383pt x 318.35185pt.
-<vc-vr-descarga.pdf, id=47, 598.235pt x 845.1575pt>
-File: vc-vr-descarga.pdf Graphic file (type pdf)
-<use vc-vr-descarga.pdf>
-Package pdftex.def Info: vc-vr-descarga.pdf  used on input line 267.
+<descarga.pdf, id=55, 598.235pt x 845.1575pt>
+File: descarga.pdf Graphic file (type pdf)
+<use descarga.pdf>
+Package pdftex.def Info: descarga.pdf  used on input line 285.
 (pdftex.def)             Requested size: 225.34383pt x 318.35185pt.
-
-Underfull \hbox (badness 3019) in paragraph at lines 268--268
-[]\OT1/cmr/m/it/10 Figura 3: |Ima-gen su-pe-rior: ajus-te pa-ra pun-tos
- []
-
-[2 <./ajustes-carga.pdf> <./vc-vr-descarga.pdf>] [3] (A_AFA_template.aux
+ [2 <./vr-vc-general.jpg>] [3 <./carga.pdf> <./descarga.pdf>] (A_AFA_template.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -578,20 +578,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `A_AFA_template.out' has not changed.
-(rerunfilecheck)             Checksum: 4ADAE067F8F9684E9ED185249905A38C;511.
+(rerunfilecheck)             Checksum: E972853634D239863E96320D35D7BFFD;502.
  ) 
 Here is how much of TeX's memory you used:
- 14715 strings out of 467866
- 241284 string characters out of 5418325
- 777782 words of memory out of 5000000
- 43392 multiletter control sequences out of 15000+600000
- 638340 words of font info for 77 fonts, out of 8000000 for 9000
+ 14714 strings out of 467866
+ 241264 string characters out of 5418325
+ 781152 words of memory out of 5000000
+ 43390 multiletter control sequences out of 15000+600000
+ 634914 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,519b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\solis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on A_AFA_template.pdf (3 pages, 325016 bytes).
+ 75i,10n,79p,396b,469s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\solis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on A_AFA_template.pdf (3 pages, 401009 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
