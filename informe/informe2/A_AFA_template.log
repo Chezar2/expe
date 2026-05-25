@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  25 MAY 2026 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.13)  25 MAY 2026 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -548,35 +548,35 @@ Package hyperref Info: Link coloring OFF on input line 144.
 <circuito1.png, id=22, 341.47575pt x 230.0595pt>
 File: circuito1.png Graphic file (type png)
 <use circuito1.png>
-Package pdftex.def Info: circuito1.png  used on input line 197.
-(pdftex.def)             Requested size: 225.34383pt x 151.81866pt.
+Package pdftex.def Info: circuito1.png  used on input line 185.
+(pdftex.def)             Requested size: 164.31754pt x 110.70462pt.
 <curva-recta.png, id=24, 499.26524pt x 433.01775pt>
 File: curva-recta.png Graphic file (type png)
 <use curva-recta.png>
-Package pdftex.def Info: curva-recta.png  used on input line 204.
-(pdftex.def)             Requested size: 225.34383pt x 195.44423pt.
+Package pdftex.def Info: curva-recta.png  used on input line 209.
+(pdftex.def)             Requested size: 211.26028pt x 183.22731pt.
 <circuito2.png, id=25, 442.65375pt x 337.26pt>
 File: circuito2.png Graphic file (type png)
 <use circuito2.png>
-Package pdftex.def Info: circuito2.png  used on input line 228.
-(pdftex.def)             Requested size: 225.34383pt x 171.69154pt.
+Package pdftex.def Info: circuito2.png  used on input line 225.
+(pdftex.def)             Requested size: 140.84258pt x 107.30786pt.
  [1{C:/Users/solis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
- <./circuito1.png>]
+ <./circuito1.png> <./curva-recta.png>]
 <ajuste.pdf, id=53, 1004.75375pt x 711.65875pt>
 File: ajuste.pdf Graphic file (type pdf)
 <use ajuste.pdf>
-Package pdftex.def Info: ajuste.pdf  used on input line 268.
+Package pdftex.def Info: ajuste.pdf  used on input line 258.
 (pdftex.def)             Requested size: 225.34383pt x 159.60593pt.
 <residuo.png, id=54, 455.301pt x 339.669pt>
 File: residuo.png Graphic file (type png)
 <use residuo.png>
-Package pdftex.def Info: residuo.png  used on input line 276.
-(pdftex.def)             Requested size: 225.34383pt x 168.11334pt.
- [2 <./curva-recta.png> <./circuito2.png> <./ajuste.pdf>] [3
+Package pdftex.def Info: residuo.png  used on input line 266.
+(pdftex.def)             Requested size: 187.78532pt x 140.09445pt.
+ [2 <./circuito2.png> <./ajuste.pdf> <./residuo.png>] [3
 
- <./residuo.png>] (A_AFA_template.aux
+] (A_AFA_template.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -590,13 +590,13 @@ Package rerunfilecheck Info: File `A_AFA_template.out' has not changed.
 Here is how much of TeX's memory you used:
  14703 strings out of 467866
  241043 string characters out of 5418325
- 783157 words of memory out of 5000000
+ 780157 words of memory out of 5000000
  43388 multiletter control sequences out of 15000+600000
  634578 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,529b,469s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,529b,500s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\solis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/solis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on A_AFA_template.pdf (3 pages, 492823 bytes).
+Output written on A_AFA_template.pdf (3 pages, 492712 bytes).
 PDF statistics:
  172 PDF objects out of 1000 (max. 8388607)
  13 named destinations out of 1000 (max. 500000)

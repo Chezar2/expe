@@ -179,6 +179,14 @@ sugiriendo la necesidad de considerar otros factores para mejorarlo.
 %\begin{equation} \end{equation}
 %
 \section{INTRODUCCIÓN}
+ %
+    \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.35\textwidth]{circuito1.png} %las imagenes van en pdf
+  \caption{Esquema de circuito de polarizacion directa de un diodo con resistencia en serie.}
+  \label{fig:figura1}
+  \end{figure}
+%
 El diodo es un dispositivo electrónico formado por la unión de dos materiales semiconductores, uno tipo p (ánodo) y otro tipo n (cátodo), que permite el paso de corriente en un solo sentido.
 En un diodo, la relación entre la corriente $I$ y el voltaje $V$ se describe por la ecuación de Shockley, dada por:
 \begin{equation}I_D=I_S \left[e^{V_D/(\eta V_T)}-1\right]\end{equation}
@@ -191,48 +199,34 @@ que cumple:
  Cuando el diodo esta conectado en polarización directa, permitiendo el paso de corriente, con una resistencia en serie, como se puede ver en la figura(1), usando la ley de Ohm y las leyes de Kirchhoff, se llega a la siguiente relación: $V_{CC}=V_D +I_DR $ , donde $V_{CC}$ es el voltaje de la fuente, $R$ es la resistencia en serie, $V_D$ es la tensión en el diodo e $I_D$ es la corriente que circula por el circuito.
 De modo que se puede escribir la corriente $I_D$ en función de la tensión $V_D$ en el diodo:
 \begin{equation} I_D=\left(\frac{-1}{R}\right)V_D+\frac{V_{CC}}{R}\end{equation}
- %
-    \begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.48\textwidth]{circuito1.png} %las imagenes van en pdf
-  \caption{Esquema de circuito de polarizacion directa de un diodo con resistencia en serie.}
-  \label{fig:figura1}
-  \end{figure}
-%
-    \begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.48\textwidth]{curva-recta.png}
-      \caption{Grafico de ejemplo de la curva caracteristica del diodo dada por ec(1) y una recta dada por ec(3) para un valor de $V_{CC}$ y $R$. 
-      Punto Q es la interseccion de ambas curvas.}
-  \label{fig:figura2}
-  \end{figure}
-
-%%
-%
- 
- 
-%Por la relacion entre la corriente y tension dada por ec(1) y ec(2), se puede determinar 
-%la curva caracteristica del diodo, y a partir de esta, mediante ajuste no lineal, determinar $I_S$ y $\eta$,
-
 
 Dado que la relación entre la corriente y tensión en el diodo está dada por la ec(1), y que la corriente y tensión
 en el circuito están relacionadas por la ecuación de la recta dada por ec(3), se puede determinar la curva característica del diodo,
 definiendo al conjunto de puntos $(I_D,V_D)$ que cumplen ambas ecuaciones, como puntos de trabajo o puntos Q. Por lo tanto, variando el voltaje de la fuente $V_{CC}$
  y la resistencia $R$, se pueden obtener diferentes puntos Q.
+ \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.45\textwidth]{curva-recta.png}
+      \caption{Grafico de ejemplo de la curva caracteristica del diodo dada por ec(1) y una recta dada por ec(3) para un valor de $V_{CC}$ y $R$. 
+      Punto Q es la interseccion de ambas curvas.}
+  \label{fig:figura2}
+  \end{figure}
+
+
 Si se aumenta o disminuye $V_{CC}$ para un mismo valor de R, se obtienen puntos Q obtenidos por intersecciones de rectas paralelas,
 mientras que si se varían los valores de R para un mismo valor de $V_{CC}$, se obtienen puntos Q por intersecciones de rectas con diferente pendiente. Ver figura(2).
+
+
 \section{METODOLOGÍA}
+
   %%
     \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.48\textwidth]{circuito2.png} %las imagenes van en pdf 
+    \includegraphics[width=0.3\textwidth]{circuito2.png} %las imagenes van en pdf 
     \caption{Esquema de circuito usado para las mediciones. $V_{CC}$ es la fuente,  $R_1$ y $R_2$ son reóstatos, $D$ es el diodo, A y V corresponden a amperímetro y voltímetro respectivamente.}
   \label{fig:figura3}
   \end{figure}
-
 %%
-
-
 Primero se debe verificar el correcto funcionamiento del diodo, para ello se lo conecta a un multímetro
 en modo de prueba de diodos, y se revisa que la componente conduzca corriente en un sentido y no en el otro.
 
@@ -258,10 +252,6 @@ Usando software de ajuste no lineal, se ajustan los puntos obtenidos a la ecuaci
 \begin{equation}y(x)=P_0 \left[e^{x/P_1}-1\right]\end{equation}
 Donde $P_0$ y $P_1$ son los parámetros a ajustar, que corresponden a $I_S$ y $\eta V_T$ respectivamente.
 \section{RESULTADOS}
-Realizando el ajuste con ec(4) sobre los datos experimentales, ver figura(3), se obtienen los siguientes parámetros:
-$$P_0=I_S=(1.0\pm0.1)10^{-8}A$$
-$$P_1=\eta V_T=(4.41\pm0.03)10^{-2}V$$
-
 %
    \begin{figure}[ht]
     \centering
@@ -273,11 +263,16 @@ $$P_1=\eta V_T=(4.41\pm0.03)10^{-2}V$$
   %
    \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.48\textwidth]{residuo.png} 
+    \includegraphics[width=0.4\textwidth]{residuo.png} 
   \caption{Gráfico de residuos del ajuste no lineal.}
   \label{fig:figura5}
   \end{figure}
   %%
+
+Realizando el ajuste con ec(4) sobre los datos experimentales, ver figura(4), se obtienen los siguientes parámetros:
+$$P_0=I_S=(1.0\pm0.1)10^{-8}A$$
+$$P_1=\eta V_T=(4.41\pm0.03)10^{-2}V$$
+
 
 Con la temperatura ambiente medida, se obtiene $V_T=(2.573\pm0.002)10^{-2}V$. Usando que $P_1=\eta V_T$, resulta $\eta=(1.71\pm0.01)$. Las incertezas las determino
 por propagación de error.
