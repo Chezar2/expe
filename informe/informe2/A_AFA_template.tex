@@ -119,7 +119,7 @@
 %%% El contenido del documento comienza a partir de acá 
 
 %título del trabajo: en el primer campo en castellano, en el segundo en inglés
-\titulo{RESPUESTA TRANSITORIA EN UN CIRCUITO RC}
+\titulo{CURVA CARACTERÍSTICA DE DIODO}
  
 \autor{ }{César Orlando Solis \\ \small \texttt{cesar.solis@mi.unc.edu.ar}}
 
@@ -130,11 +130,11 @@
 
 %afiliaciones: se pueden combinar% Facultad de Matematica, Astronomia, Fisica y Computacion, UNC - Av. Medina Allende - (5000) Cordoba - Argentina
 \filiacion{ }{Facultad de Matematica, Astronomia, Fisica y Computacion, UNC\par
-Av. Medina Allende - (5000) Cordoba – Argentina}
+Av. Medina Allende - (5000) Córdoba – Argentina}
 %\filiacion{2}{Centro de Investigaciones en Láseres y Aplicaciones  CEILAP (CITEDEF-CONICET)
 %J. B. de La Salle 4397 \par (B1603ALO) Villa Martelli – Prov. Buenos Aires – Argentina}
 
-\fecha{Fecha: 01/04/26 }%;Aceptado: xx/xx/xx} %No modificar
+\fecha{Fecha: 13/05/26 }%;Aceptado: xx/xx/xx} %No modificar
 
 
 \setcounter{Maxaffil}{0}
@@ -151,12 +151,15 @@ Av. Medina Allende - (5000) Cordoba – Argentina}
 \centering\begin{minipage}{\dimexpr\paperwidth-6cm}
 
 %Abstract en castellano
-\esresumen{En este trabajo se analiza el comportamiento de la diferencia de potencial en función del 
-tiempo en los extremos de las componentes de un circuito RC en serie, sometido a una señal de alimentación 
-cuadrada positiva. El tiempo característico del circuito ($\tau$) se determinó mediante tres métodos distintos:
-cálculo analítico a partir de las componentes del circuito, medición directa con cursores en el osciloscopio y ajustes no lineales sobre puntos medidos. 
-Los $\tau$ obtenidos por el método de ajuste resultaron ser los más precisos, brindando un 
-tiempo característico medio $\tau = (1,88 \pm 0,01) \times 10^{-5} \text{ s}$. 
+\esresumen{%En este trabajo se analiza la curva caracteristica de un diodo conectado en serie con resistencias, y mediante ajuste no lineal se determina la corriente de 
+%saturacion y el material con el que está fabricado, determinando que está fabricado de silicio. 
+
+En este trabajo se analiza la curva característica de un diodo conectado en serie con resistencias.
+ Mediante un ajuste no lineal utilizando la ecuación de Shockley, se determinó la corriente de saturación 
+ $I_S = (1,0 \pm 0,1) \times 10^{-8}\text{ A}$ y el coeficiente $\eta = (1,71 \pm 0,01)$ , confirmando 
+que el componente está fabricado de silicio. Si bien los parámetros concuerdan con los rangos teóricos esperados
+, el análisis de los residuos del ajuste indica que el modelo ideal no describe completamente el comportamiento del diodo, sugiriendo la necesidad de considerar factores adicionales para mejorar el ajuste.
+
 }
 %\pclaves{Palabras Clave: preparación, manuscritos, publicación.} %palabras clave
 
@@ -176,160 +179,131 @@ tiempo característico medio $\tau = (1,88 \pm 0,01) \times 10^{-5} \text{ s}$.
 %\begin{equation} \end{equation}
 %
 \section{INTRODUCCIÓN}
-Se conoce como circuito RC a un circuito que consiste en una combinación en 
-serie de un resistor y un capacitor. Mientras el capacitor se carga o descarga, por las leyes de Kirchhoff y tomando la espira adecuada en cada caso
-se llegan a dos expresiones que describen la carga dentro del capacitor, ec(1)  y ec(2), para carga y descarga respectivamente, Q es la carga máxima del capacitor.
-\begin{equation}q(t)=Q \left(1 - e^{-t/(RC)}\right)\end{equation}
-\begin{equation}q(t)=Q e^{-t/(RC)}\end{equation}
+El diodo es un dispositivo electrónico formado por la unión de dos materiales semiconductores, uno tipo p (ánodo) y otro tipo n (cátodo), que permite el paso de corriente en un solo sentido.
+En un diodo, la relación entre la corriente $I$ y el voltaje $V$ se describe por la ecuación de Shockley, dada por:
+\begin{equation}I_D=I_S \left[e^{V_D/(\eta V_T)}-1\right]\end{equation}
+Donde $I_S$ es la corriente de saturación, $\eta$ es el coeficiente de emisión, que depende del material con que esta fabricado el diodo, y $V_T$ es la tensión equivalente de temperatura,
+que cumple:
+\begin{equation}V_T = kT/q\end{equation}
+ Con la temperatura $T$ en Kelvin.
 
-Usando ec(1)y ec(2) obtengo expresiones para el voltaje entre los extremos del capacitor al dividir ambos miembros por la capacitancia de este, 
-quedando ec(3) y ec(4) ,para carga y descarga respectivamente.
-\begin{equation}V_{Cc}(t)=V_{max} \left(1 - e^{-t/(RC)}\right)\end{equation}
-\begin{equation}V_{Cd}(t)=V_{max} e^{-t/(RC)}\end{equation}
-Luego, derivando ec(1) y ec(2) con respecto al tiempo, se obtienen las expresiones para la corriente que pasa por el circuito, y multiplicando ambos miembros por la resistencia, se obtienen ec(5) para carga y ec(6) que describen
-diferencia de potencial entre extremos de la resistencia, para carga y descarga respectivamente.
-\begin{equation}V_{Rc}(t)=V_{max} e^{-t/(RC)}\end{equation} 
-\begin{equation}V_{Rd}(t)=-V_{max} e^{-t/(RC)}\end{equation} 
-La constante $\tau$ es el tiempo característico del circuito, que cumple \begin{equation}\tau=RC\end{equation} 
-y representa el intervalo de tiempo durante el cual el voltaje disminuye hasta $1/e$ de su valor inicial.
-\section{METODOLOGÍA}
-%\subsection{Instrucciones generales para la redacción}
-Primero se hacen mediciones de la resistencia y capacitor con multímetro, $R=(1000\pm3)\Omega$ y $C=(3.4\pm0.1)10^{-9}F $.
 
-Se conectan la fuente y el generador de funciones (GF), estableciendo en este último una señal cuadrada positiva 
-con una frecuencia de $f=950$Hz y voltaje maximo $V_{max}=1.50V$ , luego usando un $\texttt{offset}$ se cambia a una amplitud pico-a-pico cercana a 3V, quedando
-$V_{max}$ de $3.12V$ para la onda.
-
-Se arma y conecta el circuito RC al GF y luego a los canales (CH1, CH2) del OSC, como se indica en la figura(1). Los canales 
-deberán estar configurados en acoplamiento CC, y CH2 en modo INV, por la forma en que se conecta al circuito. Ver esquema del circuito en la figura(1).
-%
+ Cuando el diodo esta conectado en polarización directa, permitiendo el paso de corriente, con una resistencia en serie, como se puede ver en la figura(1), usando la ley de Ohm y las leyes de Kirchhoff, se llega a la siguiente relación: $V_{CC}=V_D +I_DR $ , donde $V_{CC}$ es el voltaje de la fuente, $R$ es la resistencia en serie, $V_D$ es la tensión en el diodo e $I_D$ es la corriente que circula por el circuito.
+De modo que se puede escribir la corriente $I_D$ en función de la tensión $V_D$ en el diodo:
+\begin{equation} I_D=\left(\frac{-1}{R}\right)V_D+\frac{V_{CC}}{R}\end{equation}
+ %
     \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.48\textwidth]{circuito.png}
-  \caption{Esquema del circuito RC conectado al GF y a los canales CH1 y CH2 del OSC}
+    \includegraphics[width=0.48\textwidth]{circuito1.png} %las imagenes van en pdf
+  \caption{Esquema de circuito de polarizacion directa de un diodo con resistencia en serie.}
   \label{fig:figura1}
   \end{figure}
-
 %
-$\pagebreak$
-
-En el osciloscopio se ajustan las escalas y se desplazan verticalmente las funciones de tal forma que sea posible 
-ver sobre el eje de tiempo los voltajes para resistencia y capacitor, luego se guardan puntos de las funciones $V_R(t)$ y $V_C(t)$, 
-para carga y descarga de capacitor. Ver figura(2) para una vista general de las funciones mostradas en osciloscopio.
-
-
-  %%
     \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.48\textwidth]{vr-vc-general.jpg} %las imagenes van en pdf 
-    \caption{Vista general de voltajes en funcion del tiempo para capacitor y resistencia, en este caso mientras se descarga de capacitor.}
+    \includegraphics[width=0.48\textwidth]{curva-recta.png}
+      \caption{Grafico de ejemplo de la curva caracteristica del diodo dada por ec(1) y una recta dada por ec(3) para un valor de $V_{CC}$ y $R$. 
+      Punto Q es la interseccion de ambas curvas.}
   \label{fig:figura2}
   \end{figure}
 
 %%
-Usando los cursores del osciloscopio, se hacen varias mediciones del tiempo que tardan las funciones en variar 1/e, 
-para carga será un $63\%$ del voltaje maximo ($V_{max}$) que alcanza la onda generada por GF y para descarga un $37\%$, estas serán  $\tau$ de referencia.
-
-%A continuación se hacen los ajustes no lineales usando ecuaciones (1-4) para los puntos guardados, con tiempo como variable y $V_{max}$, $\tau$, D como parámetros, 
-%siendo D el termino independiente de la función, que se agrega para mejorar el ajuste hecho con un programa de python. Ver figura(2) y figura(3).
-A continuacion, para realizar los ajustes no lineales, utilizo las siguientes funciones que imitan la forma de las ecuaciones (3), (4), (5) y (6) respectivamente.
-\begin{equation}V_{Cc}(x)=P_0 \left(1 - e^{-(x-x_0)/P_1}\right)+P_2\end{equation}
-\begin{equation}V_{Cd}(x)=P_0 \left( e^{-(x-x_0)/P_1}\right)+P_2\end{equation}
-
-\begin{equation}V_{Rc}(x)=P_0 \left( e^{-(x-x_0)/P_1}\right)+P_2\end{equation}
-\begin{equation}V_{Rd}(x)=P_0 \left(- e^{-(x-x_0)/P_1}\right)+P_2\end{equation}
-Donde $P_0$ es el voltaje maximo, $P_1$ es el tiempo caracteristico $\tau$, $P_2$ es el termino independiente que se agrega para mejorar el ajuste, 
-y $x_0$ es un corrimiento en el eje de tiempo que se agrega, ya que las funciones no comienzan exactamente en $x=0s$.
-
-
-%$\pagebreak$
-\section{RESULTADOS}
-Por medir la resistencia y capacitancia de los elementos del circuito, se aproxima un valor de tiempo característico, usando ec(7), 
-$\tau_a = (0.34\pm0.01)10^{-5}s$.
-
-Usando los $\tau$ medidos con cursores se calculan valores medios, $\overline{\tau_c}=(2.37\pm0.06)10^{-5}s$ $\overline{\tau_d}=(1.43\pm0.08)10^{-5}s$ 
-para carga y descarga respectivamente.
-Se realizan los ajustes no lineales para cada función (ver figuras (3) y (4)), y se rescatan los parámetros correspondientes a $\tau$ 
-devueltos por el programa de ajuste, ver tabla(1).
-
-\section{CONCLUSION}
-En este trabajo se determinó el tiempo característico $\tau$ mediante tres metodos:
- el cálculo analítico ($\tau_{a}$), la medición directa con cursores ($\overline{\tau_{c}}, \overline{\tau_{d}}$) 
- y el ajuste no lineal de las curvas de voltaje.
-
- Al comparar los resultados de Tabla(2) se observa que los tiempos caracteristicos obtenidos por los ajustes tienen menor error relativo que 
- los calculados por los otros métodos, hallandose entre el $0.2\% $ y el $0.5\% $. Estos resultados son los más confiables del trabajo,
- ya que se ha usado una gran cantidad de puntos para el ajuste.
- Por otro lado, con los cursores se obtiene un error relativo de entre el $3\%$ y el $6\%$, debido a la gran dificultad de posicionar manualmente 
- los cursores donde correspondia, se le atribuye error humano.
-   
- El valor de referencia $\tau_{a}$ calculado a partir de la resistencia y capacitancia medidas con multímetro muestra la mayor desviación respecto 
- a los valores de ajuste, que podría deberse a la inestabilidad observada en las lecturas del multímetro, el cual no mostraba un valor fijo 
- durante la medición del capacitor, afectando la precisión de $\tau_{a}$, sin mencionar que este método es el menos confiable, por basarse en mediciones que 
- tienen un error significativo, sin tener en cuenta la resistencia del cableado, que afectan el valor real de $\tau$.
- Finalmente, se concluye que el mejor método para determinar $\tau$ es el ajuste no lineal, y tomo como tiempo caracteristico final el valor medio entre estos, quedando:
- $$\tau=(1.88\pm0.01)10^{-5} s$$
-
-
 %
-   \begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.48\textwidth]{carga.pdf} 
-  \caption{Imagen superior: ajuste para puntos de $V_{Cc}(t)$. Imagen inferior: ajuste para puntos de $V_{Rc}(t)$. Cada punto con sus respectivas barras de error.}
-  \label{fig:figura3}
-  \end{figure}
+ 
+ 
+%Por la relacion entre la corriente y tension dada por ec(1) y ec(2), se puede determinar 
+%la curva caracteristica del diodo, y a partir de esta, mediante ajuste no lineal, determinar $I_S$ y $\eta$,
 
+
+Dado que la relación entre la corriente y tensión en el diodo está dada por la ec(1), y que la corriente y tensión
+en el circuito están relacionadas por la ecuación de la recta dada por ec(3), se puede determinar la curva característica del diodo,
+definiendo al conjunto de puntos $(I_D,V_D)$ que cumplen ambas ecuaciones, como puntos de trabajo o puntos Q. Por lo tanto, variando el voltaje de la fuente $V_{CC}$
+ y la resistencia $R$, se pueden obtener diferentes puntos Q.
+Si se aumenta o disminuye $V_{CC}$ para un mismo valor de R, se obtienen puntos Q obtenidos por intersecciones de rectas paralelas,
+mientras que si se varían los valores de R para un mismo valor de $V_{CC}$, se obtienen puntos Q por intersecciones de rectas con diferente pendiente. Ver figura(2).
+\section{METODOLOGÍA}
   %%
     \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.48\textwidth]{descarga.pdf}
-    \caption{Imagen superior: ajuste para puntos de $V_{Cd}(t)$.Imagen inferior: ajuste para puntos de $V_{Rd}(t)$. Cada punto con sus respectivas barras de error.}
-  \label{fig:figura4}
+    \includegraphics[width=0.48\textwidth]{circuito2.png} %las imagenes van en pdf 
+    \caption{Esquema de circuito usado para las mediciones. $V_{CC}$ es la fuente,  $R_1$ y $R_2$ son reóstatos, $D$ es el diodo, A y V corresponden a amperímetro y voltímetro respectivamente.}
+  \label{fig:figura3}
   \end{figure}
 
 %%
 
-%tabla petit
-\begin{table*}[t]  
-\centering
-%\caption{Estilo recomendado de tabla a doble columna}
-\label{tabl:tab1}
-\begin{tabular}{|c|c|c|c|c|} 
-\hline
-Parametros     & $V_{Cc}$ & $V_{Cd}$ & $V_{Rc}$ & $V_{Rd}$  \\ \thickhline
-$P_0$ &$(2.983\pm 0.003)V$ & $(2.793\pm0.009)V$ & $(2.284\pm0.003)V$&$(-2.47\pm0.01)V$ \\ \hline
-$P_1$ &$(1.778\pm0.003)10^{-5}s$ &$(1.88\pm0.01)10^{-5}s$ &$(1.814\pm0.004)10^{-5}s$ &$(2.06\pm0.01)10^{-5}s$ \\ \hline
-$P_2$ &$(1.384\pm0.003)V$ &$(1.274\pm0.002)V$ &$(3.36\pm0.05)10^{-2}V$ &$(1.6\pm0.2)10^{-2}V$ \\ \hline
-\end{tabular}
-\caption{Parámetros obtenidos por el programa de ajuste, para cada función, de acuerdo a las ecuaciones (8-11).}
-\end{table*}
-%fin tabla petit
-%tabla grande, ocupa el doble ancho de la página. LaTeX las ubica al principio de la hoja
-\begin{table*}[t]  
-\centering
-%\caption{Estilo recomendado de tabla a doble columna}
-\label{tabl:tab2}
-\begin{tabular}{|c|c|c|}
-\hline
-$\tau$      & Valor hallado& $e_{relativo}(\tau)$ \\ \thickhline
-$\tau_{V_Cc}$ &  $(1.778\pm0.003 )10^{-5}s$  & 0.2$\%$\\ \hline
-$\tau_{V_Rc}$  &  $(1.814\pm0.004 )10^{-5}s$  & 0.2$\%$\\ \hline
-$\tau_{V_Cd}$ & $(1.88\pm0.01 )10^{-5}s$ &0.5$\%$\\ \hline
-$\tau_{V_Rd}$   & $(2.06\pm0.01 )10^{-5}s$ & 0.5$\%$\\ \hline
-$\overline{\tau_c}$&  $(2.37\pm0.06)10^{-5}s$  & 3$\%$\\ \hline
-$\overline{\tau_d}$ &  $(1.43\pm0.08)10^{-5}s$  & 6$\%$\\ \hline
-$\tau_a$ &   $(0.34\pm0.01)10^{-5}s$ & 3$\%$\\ \hline
-\end{tabular}
-\caption{Todos $\tau$ hallados con sus errores relativos, el subinidice c o d indica que corresponde a mediciones hechas mientras se cargaba o descargaba el capacitor.}
-\end{table*}
 
+Primero se debe verificar el correcto funcionamiento del diodo, para ello se lo conecta a un multímetro
+en modo de prueba de diodos, y se revisa que la componente conduzca corriente en un sentido y no en el otro.
+
+
+La temperatura ambiente del laboratorio se mide con un termómetro de mercurio, $T=(25.4\pm0.2)^\circ C=(298.6\pm0.2) K$.
+
+
+Se disponen dos reóstatos, preferentemente uno de resistencia grande y otro de resistencia pequeña, en este caso $R_1=500\Omega$ y $R_2=25\Omega$, para
+poder medir la curva característica del diodo en un amplio rango de voltajes y corrientes.
+
+
+Luego se arma el circuito de la figura(2) con los elementos dados, y se conecta a la fuente de voltaje, estableciendo corriente máxima y voltaje $0V$.
+
+
+Usando amperímetro en escala de $mA$ y voltímetro en escala de $V$, se miden los valores de corriente en el circuito y tensión en los extremos del diodo (por conexión corta),
+variando la tensión de la fuente $V_{CC}$ en el rango de $0V$ a $4V$, usando la perilla de paso fino. Luego se toman mediciones con la fuente fija en $4V$ y
+variando las resistencias $R_1$ y $R_2$ para obtener más puntos de la curva característica del diodo. Cuidando de nunca superar el límite de corriente configurada en el amperímetro.
+
+
+
+
+Usando software de ajuste no lineal, se ajustan los puntos obtenidos a la ecuación de Shockley, usando funcion:
+\begin{equation}y(x)=P_0 \left[e^{x/P_1}-1\right]\end{equation}
+Donde $P_0$ y $P_1$ son los parámetros a ajustar, que corresponden a $I_S$ y $\eta V_T$ respectivamente.
+\section{RESULTADOS}
+Realizando el ajuste con ec(4) sobre los datos experimentales, ver figura(3), se obtienen los siguientes parámetros:
+$$P_0=I_S=(1.0\pm0.1)10^{-8}A$$
+$$P_1=\eta V_T=(4.41\pm0.03)10^{-2}V$$
+
+%
+   \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\textwidth]{ajuste.pdf} 
+  \caption{Puntos experimentales de la curva característica del diodo, con sus respectivas barras de error, y ajuste no lineal a la ecuación de Shockley.}
+  \label{fig:figura4}
+  \end{figure}
+  %%
+  %
+   \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\textwidth]{residuo.png} 
+  \caption{Gráfico de residuos del ajuste no lineal.}
+  \label{fig:figura5}
+  \end{figure}
+  %%
+
+Con la temperatura ambiente medida, se obtiene $V_T=(2.573\pm0.002)10^{-2}V$. Usando que $P_1=\eta V_T$, resulta $\eta=(1.71\pm0.01)$. Las incertezas las determino
+por propagación de error.
+
+\section{CONCLUSION}
+Por figura(5) se puede observar que el ajuste no lineal a la ecuación de Shockley no es ideal, ya que los residuos  no se distribuyen aleatoriamente alrededor de cero,
+mostrando un patrón sistemático, de modo que no describe completamente el comportamiento del diodo. Agregando un desfase a la ecuación de Shockley, no hubo cambio alguno
+en los residuos, por lo que se podría concluir que el desfase no es un factor importante a considerar para mejorar el ajuste. Pudo haber afectado a las mediciones la resistencia
+ en la conexión del diodo con el multímetro, provocando una caída de tensión no prevista, o el calentamiento del circuito tras varias horas de mediciones.
+
+
+ Por la hoja de datos de diodo 1N5408, se sabe que a una temperatura ambiente de $25^\circ C$, el valor máximo de $I_S$ es de $5\times10^{-6}A$ , y dado que
+la corriente inversa de saturación obtenido $I_S=(1.0\pm0.1)10^{-8}A$ está por debajo de este valor, se puede concluir que el diodo está funcionando correctamente.
+
+
+Por otro lado, el valor de $\eta = (1.71\pm0.01)$
+obtenido es consistente con el valor esperado para un diodo de silicio, que es del orden de 2 . Sin embargo, la temperatura del laboratorio (y del circuito) habría variado a lo largo
+ de las mediciones, lo que podría haber afectado el valor de $V_T$ y por ende el valor de $\eta$ obtenido, lo que se podría mejorar en futuras mediciones
+ controlando la temperatura ambiente, o tomando valor medio de varias temperaturas a diferentes horas.
 
 
 
 \section{REFERENCIAS}
 %\vspace{-3ex}%hace
 1- Guia de laboratorio:“Trabajo de 
-Laboratorio Nº2: Respuesta transitoria en un circuito RC”.
+Laboratorio Nº4: Diodo”.
 Facultad de Matemática, Astronomía, 
 Física y Computación 2026. Aula virtual 
 Física Experimental III 2026.
@@ -338,9 +312,6 @@ Física Experimental III 2026.
 2- Manual Multimetro UNI-T UT39E+
 
 
-3- Manual Multimetro-LCR UNI-T UT612
-
-
-4- Serway, R. A., Jewett, J. W. (2008). Física para ciencias e ingeniería (Vol. 2). Cengage Learning.
+3-  Hoja de Datos del diodo 1N5408, disponible en: \url{https://www.vishay.com}
 
 \end{document}
