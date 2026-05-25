@@ -179,25 +179,25 @@ sugiriendo la necesidad de considerar otros factores para mejorarlo.
 %\begin{equation} \end{equation}
 %
 \section{INTRODUCCIÓN}
- %
-    \begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.35\textwidth]{circuito1.png} %las imagenes van en pdf
-  \caption{Esquema de circuito de polarizacion directa de un diodo con resistencia en serie.}
-  \label{fig:figura1}
-  \end{figure}
-%
+
 El diodo es un dispositivo electrónico formado por la unión de dos materiales semiconductores, uno tipo p (ánodo) y otro tipo n (cátodo), que permite el paso de corriente en un solo sentido.
 En un diodo, la relación entre la corriente $I$ y el voltaje $V$ se describe por la ecuación de Shockley, dada por:
 \begin{equation}I_D=I_S \left[e^{V_D/(\eta V_T)}-1\right]\end{equation}
-Donde $I_S$ es la corriente de saturación, $\eta$ es el coeficiente de emisión, que depende del material con que esta fabricado el diodo, y $V_T$ es la tensión equivalente de temperatura,
+Donde $I_S$ es la corriente de saturación, $\eta$ es el coeficiente de emisión, que depende del material con que esta fabricado el componente, y $V_T$ es la tensión equivalente de temperatura,
 que cumple:
 \begin{equation}V_T = kT/q\end{equation}
  Con la temperatura $T$ en Kelvin.
 
-
+ %
+    \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.35\textwidth]{circuito1.png} %las imagenes van en pdf
+  \caption{Esquema de circuito de polarizacion directa de un diodo ($D$) con resistencia ($R$) en serie, conectado a una fuente de voltaje ($V_{CC}$).}
+  \label{fig:figura1}
+  \end{figure}
+%
  Cuando el diodo esta conectado en polarización directa, permitiendo el paso de corriente, con una resistencia en serie, como se puede ver en la figura(1), usando la ley de Ohm y las leyes de Kirchhoff, se llega a la siguiente relación: $V_{CC}=V_D +I_DR $ , donde $V_{CC}$ es el voltaje de la fuente, $R$ es la resistencia en serie, $V_D$ es la tensión en el diodo e $I_D$ es la corriente que circula por el circuito.
-De modo que se puede escribir la corriente $I_D$ en función de la tensión $V_D$ en el diodo:
+De modo que se puede escribir la corriente $I_D$ en función de la tensión $V_D$:
 \begin{equation} I_D=\left(\frac{-1}{R}\right)V_D+\frac{V_{CC}}{R}\end{equation}
 
 Dado que la relación entre la corriente y tensión en el diodo está dada por la ec(1), y que la corriente y tensión
@@ -235,10 +235,10 @@ La temperatura ambiente del laboratorio se mide con un termómetro de mercurio, 
 
 
 Se disponen dos reóstatos, preferentemente uno de resistencia grande y otro de resistencia pequeña, en este caso $R_1=500\Omega$ y $R_2=25\Omega$, para
-poder medir la curva característica del diodo en un amplio rango de voltajes y corrientes.
+poder medir la curva característica en un amplio rango de voltajes y corrientes.
 
 
-Luego se arma el circuito de la figura(2) con los elementos dados, y se conecta a la fuente de voltaje, estableciendo corriente máxima y voltaje $0V$.
+Luego se arma el circuito de la figura(2) con los elementos dados, y se conecta a la fuente de voltaje, estableciendo con las perillas de ajuste la corriente máxima y voltaje $0V$.
 
 
 Usando amperímetro en escala de $mA$ y voltímetro en escala de $V$, se miden los valores de corriente en el circuito y tensión en los extremos del diodo (por conexión corta),
