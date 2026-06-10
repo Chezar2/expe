@@ -1,0 +1,30 @@
+   	distribución Gaussiana
+  return np.exp(-(x-p[1])**2/(2*p[2]**2))*p[0]
+
+ 	 polinomio de grado 2
+  return p[0]+np.x*p[1]+np.x**2*p[2]
+
+  	diodo
+  return p[0]*np.exp(x/p[1]-1)
+
+ 	 bobina circular n vueltas
+  return p[0]/(p[1]**2+(x-p[2])**2)**(1.5)+p[3]
+
+ 	 bobinas configuración anti Helmholtz
+  return p[0]/(p[1]**2+(x-p[2])**2)**(1.5)-p[3]/(p[4]**2+(x-p[5])**2)**(1.5)+p[6]
+
+	descarga cap (por capacitor)
+  return p[0] * np.exp(-(x - x[0]) / p[1]) + p[2]
+
+	carga cap (por capacitor)
+  return p[0] * (1 - np.exp(-(x - x[0]) / p[1])) + p[2]
+
+	carga cap (por resistencia)
+  return p[0] * np.exp(-(x - x[0]) / p[1]) + p[2]
+
+	descarga cap (por resistencia)
+  return p[0] * np.exp(-(x - x[0]) / p[1]) + p[2]
+
+
+    # cosa rara !!!
+    # p[0]*2*np.pi / np.sqrt(x**2+(2*np.pi*p[1])**2*(x**2-p[2]**2)**2)
